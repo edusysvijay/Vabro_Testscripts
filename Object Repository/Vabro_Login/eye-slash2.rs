@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>eye-slash2</name>
+   <tag></tag>
+   <elementGuidId>9b930996-59ce-4277-97c9-4f0bf427d626</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>i.far.fa-eye.toggle-password.fa-eye-slash</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//i[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>far fa-eye toggle-password fa-eye-slash</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;bg01&quot;]/div[@class=&quot;container-fluid&quot;]/main[@class=&quot;pb-3 dark&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-lg-10 col-xl-8 mx-auto&quot;]/div[@class=&quot;floating-login-block&quot;]/div[@class=&quot;row no-gutters&quot;]/div[@class=&quot;col-md-6 px-6 py-7 login-form order-md-2 order-1&quot;]/form[@class=&quot;login-join-form&quot;]/div[@class=&quot;form-group position-relative&quot;]/i[@class=&quot;far fa-eye toggle-password fa-eye-slash&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//i[2]</value>
+   </webElementXpaths>
+</WebElementEntity>

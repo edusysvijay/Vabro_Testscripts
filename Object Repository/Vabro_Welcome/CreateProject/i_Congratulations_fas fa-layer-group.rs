@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_Congratulations_fas fa-layer-group</name>
+   <tag></tag>
+   <elementGuidId>36aa02e1-b45b-40a3-8dcd-c5785c12fd65</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[2]/div/a/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>i.fas.fa-layer-group</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fas fa-layer-group</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@class=&quot;container-fluid&quot;]/main[@class=&quot;pb-3&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-lg-10 col-xl-8 mx-auto&quot;]/div[@class=&quot;floating-form-block&quot;]/div[@class=&quot;row no-gutters&quot;]/div[@class=&quot;col-md-5 col-lg-6 mx-auto my-4&quot;]/div[@class=&quot;floating-log-block my-2 px-4 py-5 text-center&quot;]/div[@class=&quot;log-block&quot;]/div[@class=&quot;row mt-6 cta-lg&quot;]/div[@class=&quot;col-6&quot;]/a[@class=&quot;btn btn-outline-primary btn-block&quot;]/i[@class=&quot;fas fa-layer-group&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/a/i</value>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "E8C3720489E9164E51741D7E436EA47E",
+  "keywordClasses": [
+    {
+      "name": "customPackage.logout",
+      "keywordMethods": [
+        {
+          "name": "logoutFromApplication",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
