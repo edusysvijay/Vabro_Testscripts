@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>VB_Logout</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f76ba6b6-cffe-4843-abcd-5453966e8cf5</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a25ceb76-0165-4382-92c1-7af0c1cba6cc</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5a849eee-489b-4fbb-b301-c00a5c5579bc</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>
