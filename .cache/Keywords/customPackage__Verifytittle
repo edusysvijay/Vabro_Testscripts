@@ -1,8 +1,8 @@
 {
-  "keywordFileContentHash": "45ABB338831C622BC556C0812FCD6A4E",
+  "keywordFileContentHash": "B938F3A1E42DB677FD08D3F4288FE2B3",
   "keywordClasses": [
     {
-      "name": "com.test.vabro.Verifytittle",
+      "name": "customPackage.Verifytittle",
       "keywordMethods": [
         {
           "name": "VerifyingTitle",

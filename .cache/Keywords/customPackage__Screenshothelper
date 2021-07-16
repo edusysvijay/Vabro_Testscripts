@@ -1,8 +1,8 @@
 {
-  "keywordFileContentHash": "13F6D8EAA84FA56B77C3325AB2E2661A",
+  "keywordFileContentHash": "3ED519B2C1ADC3D2FA273702A95DD9EF",
   "keywordClasses": [
     {
-      "name": "com.test.vabro.Screenshothelper",
+      "name": "customPackage.Screenshothelper",
       "keywordMethods": []
     }
   ],
