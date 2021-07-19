@@ -21,57 +21,61 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/')
 
-WebUI.setText(findTestObject('null'), 'testadm21@aol.com')
+WebUI.setText(findTestObject('Vabro_Home Page/input_Email address_Email'), 'testadm21@aol.com')
 
-WebUI.setEncryptedText(findTestObject('null'), 'ZaJEugbsRAzrN/6XQFXNeQ==')
+WebUI.setEncryptedText(findTestObject('Vabro_Home Page/input_Password_Password'), 'ZaJEugbsRAzrN/6XQFXNeQ==')
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Vabro_Home Page/span_Show'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Vabro_Home Page/span_Hide'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Vabro_Home Page/button_Login'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Create_Project/Project_Overview/i_Team AOL'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Create_Project/Edit_this_Project/a_Edit this Project'))
 
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Create_Project/Project_Overview/button_Save and Continue'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Create_Project/Project_Details/a_Add Link'))
 
-WebUI.setText(findTestObject('null'), 'https://gmail.com')
+WebUI.setText(findTestObject('Create_Project/Project_Details/input_Add Link_ProjectLinks0.AttachmentLink'), 'https://gmail.com')
 
 //WebUI.click(findTestObject('null'))
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Create_Project/Project_Details/a_Add Comment'))
 
-WebUI.setText(findTestObject('Create_Project/Project_Details/textarea_comment'), 
-    'hello')
+WebUI.delay(2)
 
-WebUI.click(findTestObject('null'))
+WebUI.setText(findTestObject('Create_Project/Project_Details/textarea_comment'), 'hello')
 
-WebUI.delay(1)
+WebUI.click(findTestObject('Create_Project/Project_Details/button_Save'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Create_Project/Project_Details/a_Add File'))
 
-WebUI.setText(findTestObject('null'), 'hiii')
 
-WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Create_Project/Project_Details/button_Save and Continue'))
 
-WebUI.setText(findTestObject('null'), 'hiii23')
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
+//WebUI.delay(2)
+//
+//WebUI.click(findTestObject('Create_Project/Project_Details/a_Reply'))
+//
+//WebUI.setText(findTestObject('Create_Project/Project_Details/textarea_Admin Tester_Comments1001.Comment'), 'hiii')
+//
+//WebUI.click(findTestObject('Create_Project/Project_Details/button_Save'))
+//
+//WebUI.click(findTestObject('Create_Project/Project_Details/a_Edit'))
+//
+//WebUI.setText(findTestObject('Create_Project/Project_Details/textarea_Admin Tester_Comments1001.Comment'), 'hiii23')
+//
+//WebUI.click(findTestObject('Create_Project/Project_Details/button_Save'))
+//
+//WebUI.click(findTestObject('Create_Project/Project_Details/a_Delete'))
+//
+//WebUI.click(findTestObject('Create_Project/Project_Details/button_Delete'))
+//
+//WebUI.click(findTestObject('Create_Project/Project_Details/button_Save and Continue'))
+CustomKeywords.'customPackage.Logout_p.VabroLogoutpage'()
 

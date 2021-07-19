@@ -16,12 +16,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'admin1@yopmail.com'</initValue>
+      <initValue>'testadm21@aol.com'</initValue>
       <name>G_Username</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Tester@123'</initValue>
+      <initValue>'Tester@1234'</initValue>
       <name>G_Password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

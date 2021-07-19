@@ -17,14 +17,32 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import java.awt.Robot
+import java.awt.Toolkit
+import java.awt.datatransfer.StringSelection
+import java.awt.event.KeyEvent
 
 import internal.GlobalVariable
 
-public class Logoutpage {
-
+public class FileUpload_V {
 	@Keyword
-	public void VabroLogoutpage() {
+	def uploadFile(TestObject to,String filepath) {
+		WebUI.click(to)
+		StringSelection ss= new StringSelection(filepath);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null)
+		Robot robot=new Robot();
 
-		WebUI.closeBrowser()
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		WebUI.delay(3)
+
+		robot.keyPress(KeyEvent.VK_V)
+		robot.keyRelease(KeyEvent.VK_V)
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		WebUI.delay(3)
+
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER)
 	}
 }

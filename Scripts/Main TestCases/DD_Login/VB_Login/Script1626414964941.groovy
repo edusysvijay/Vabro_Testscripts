@@ -17,22 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CustomKeywords.'com.test.vabro.Loginpage.Vabrologinpage'('')
+WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/')
 
 //Iterating multiple data
+
 for (def row = 1; row <= findTestData('Vabro_login details/New Test Data for vabrologin').getRowNumbers(); row++) {
-    WebUI.setText(findTestObject('null'), findTestData('Vabro_login details/New Test Data for vabrologin').getValue('Email Id', 
+    WebUI.setText(findTestObject('Object Repository/Vabro_Home Page/input_Email address_Email'), findTestData('Vabro_login details/New Test Data for vabrologin').getValue('Email Id', 
             row))
 
-    WebUI.setText(findTestObject('null'), findTestData('Vabro_login details/New Test Data for vabrologin').getValue('Password', 
+    WebUI.setText(findTestObject('Object Repository/Vabro_Home Page/input_Password_Password'), findTestData('Vabro_login details/New Test Data for vabrologin').getValue('Password', 
             row))
 }
 
 String Title = WebUI.getWindowTitle()
 
-String Title2 = 'Home Page - VABROClientf'
+String Title2 = 'Home Page - VABROClient'
 
 //The pagetitle Name
 //*Home Page - VABROClient
@@ -44,19 +45,21 @@ if (Title.equals(Title2)) {
     WebUI.delay(2)
 }
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Vabro_Home Page/span_Show'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Vabro_Home Page/span_Hide'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Vabro_Home Page/img_Join_rounded'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Vabro_Home Page/input_concat'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Vabro_Home Page/img_Join_rounded'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Vabro_Home Page/button_Login'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('null'))
-
-WebUI.delay(2)
+CustomKeywords.'customPackage.Logout_p.VabroLogoutpage'()
 

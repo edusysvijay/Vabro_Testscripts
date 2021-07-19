@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_1                                   _3dfe8f</name>
+   <name>select_members</name>
    <tag></tag>
-   <elementGuidId>c59cc364-1c8b-4fb5-bd57-8c5317bb6ed3</elementGuidId>
+   <elementGuidId>cdf4e3bd-5e1b-415e-acd2-9558faafe6ea</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>(//select[@id='scrum-teams'])[2]</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>div.input-group-prepend > #scrum-teams</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//select[@id='scrum-teams'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -42,7 +42,7 @@
       <matchCondition>equals</matchCondition>
       <name>data-size</name>
       <type>Main</type>
-      <value>4</value>
+      <value>2</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -114,14 +114,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save and Continue'])[1]/preceding::select[4]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Save and Continue'])[1]/preceding::select[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::select[4]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::select[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

@@ -17,15 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CustomKeywords.'com.test.vabro.Loginpage.Vabrologinpage'('')
+WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/home/login?ReturnUrl=%2Fhome%2Fwelcome')
+WebUI.navigateToUrl('https://vabro-dev.azurewebsites.net/home/welcome')
 
-WebUI.setText(findTestObject('null'), 
-    'testadm21@aol.com')
+WebUI.setText(findTestObject('Vabro_Home Page/input_Email address_Email'), 'testadm21@aol.com')
 
-WebUI.setEncryptedText(findTestObject('null'), 
-    'ZaJEugbsRAzrN/6XQFXNeQ==')
+WebUI.setEncryptedText(findTestObject('Vabro_Home Page/input_Password_Password'), 'ZaJEugbsRAzrN/6XQFXNeQ==')
 
 WebUI.click(findTestObject('Vabro_Home Page/img_Join_rounded_1'))
 
@@ -39,8 +37,6 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('Vabro_Home Page/img_Join_rounded_1'))
 
-WebUI.click(findTestObject('null'))
-
 String Title = WebUI.getWindowTitle()
 
 String Title2 = 'Welcome To Vabro! - VABROClient'
@@ -49,16 +45,14 @@ String Title2 = 'Welcome To Vabro! - VABROClient'
 //*Welcome to Vabro!- VABROClient
 if (Title.equals(Title2)) {
     WebUI.comment('Title matched')
-} 
-else {
+} else {
     WebUI.executeJavaScript('alert(\'page title not matched or Do not welcome vabro\')', null)
 
     WebUI.delay(4)
 }
 
 //WebUI.takeScreenshot('C:\\Users\\NAMRATA BEHERA\\Pictures\\Screenshots\\Screenshot (27).png')
-
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Vabro_Home Page/button_Login'))
 
 WebUI.delay(1)
 

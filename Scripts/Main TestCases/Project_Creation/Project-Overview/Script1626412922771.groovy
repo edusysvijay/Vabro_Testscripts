@@ -21,32 +21,30 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/')
 
-WebUI.setText(findTestObject('null'), 
-    'testadm21@aol.com')
+WebUI.setText(findTestObject('Vabro_Home Page/input_Email address_Email'), 'testadm21@aol.com')
 
-WebUI.setEncryptedText(findTestObject('null'), 
-    'ZaJEugbsRAzrN/6XQFXNeQ==')
+WebUI.setEncryptedText(findTestObject('Vabro_Home Page/input_Password_Password'), 'ZaJEugbsRAzrN/6XQFXNeQ==')
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Vabro_Home Page/span_Show'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Vabro_Home Page/span_Hide'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Vabro_Home Page/button_Login'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Create_Project/Project_Overview/i_Team AOL'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Create_Project/Edit_this_Project/a_Edit this Project'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Create_Project/Project_Overview/input__ProjectName'))
 
-WebUI.selectOptionByValue(findTestObject('null'), 
-    '4', true)
-
-WebUI.selectOptionByValue(findTestObject('null'), 
+WebUI.selectOptionByValue(findTestObject('Create_Project/Project_Overview/select_1                                   _7fb073'), 
     '2', true)
 
-WebUI.selectOptionByValue(findTestObject('null'), 
-    '4', true)
+WebUI.selectOptionByValue(findTestObject('Create_Project/Project_Overview/select_members'), '2', true)
 
-WebUI.click(findTestObject('null'))
+WebUI.selectOptionByValue(findTestObject('Create_Project/Project_Overview/select_members'), '2', true)
+
+WebUI.click(findTestObject('Create_Project/Project_Overview/button_Save and Continue'))
+
+CustomKeywords.'customPackage.Logout_p.VabroLogoutpage'()
 
