@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/')
+WebUI.navigateToUrl('https://vabro-dev.azurewebsites.net/')
 
 //Iterating multiple data
 
