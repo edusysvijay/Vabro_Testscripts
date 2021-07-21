@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "45ABB338831C622BC556C0812FCD6A4E",
+  "keywordClasses": [
+    {
+      "name": "com.test.vabro.Verifytittle",
+      "keywordMethods": [
+        {
+          "name": "VerifyingTitle",
+          "parameters": [
+            {
+              "name": "ExpectedTitle",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

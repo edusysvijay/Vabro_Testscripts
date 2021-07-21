@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "B938F3A1E42DB677FD08D3F4288FE2B3",
+  "keywordClasses": [
+    {
+      "name": "customPackage.Verifytittle",
+      "keywordMethods": [
+        {
+          "name": "VerifyingTitle",
+          "parameters": [
+            {
+              "name": "ExpectedTitle",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
