@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/')
+WebUI.navigateToUrl('https://vabro.azurewebsites.net/')
 
 WebUI.setText(findTestObject('null'), 
     'testadm21@aol.com')
