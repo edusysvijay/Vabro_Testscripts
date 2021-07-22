@@ -22,7 +22,7 @@ WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Skip for now')
 
 WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Add New Address'))
 
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/div_Address Line 1                         _73fb14'))
+WebUI.click(findTestObject('Company_Details/Add_Company_Details/div_Address Line 1'))
 
 WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input__AddressLine1'), 'rf')
 
@@ -81,5 +81,5 @@ WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Submit'))
 
 WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_SAVE'))
 
-CustomKeywords.'customPackage.Logout_p.VabroLogoutpage'()
+CustomKeywords.'customPackage.logout.VabroLogoutpage'()
 WebUI.closeBrowser()

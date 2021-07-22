@@ -21,27 +21,30 @@ CustomKeywords.'customPackage.login.loginIntoApplicationWithGlobalVariable'()
 
 String Title = WebUI.getWindowTitle()
 
-String Title2 = 'Add Company Details - VABROClientttr'
+String Title2 = 'Add Company Details - VABROClient'
 
-//The pagetitle Name
-//Add Company Details - VABROClient
+//The pagetitle Name, Add Company Details - VABROClient
 if (Title.equals(Title2)) {
-    WebUI.comment('Title matched')
-} else {
     WebUI.executeJavaScript('alert(\'page title not matched or not in the page of company details\')', null)
+} else {
+    WebUI.comment('Title matched')
 }
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Company Name_CompanyName'), findTestData('Vabro_Testdata/login_testdata').getValue(
+WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/home/welcome')
+
+WebUI.click(findTestObject('Vabro_Welcome/Add-Update-CompanyDetails'))
+
+WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Company Name_CompanyName'), findTestData('vabro_testdata').getValue(
         'Company Name', 1))
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Website_Website'), findTestData('Vabro_Testdata/login_testdata').getValue(
+WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Website_Website'), findTestData('vabro_testdata').getValue(
         'Company Website', 1))
 
 WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Company Email Id_CompanyEmailId'), findTestData(
-        'Vabro_login details/New Test Data for vabrologin').getValue('Company mail Id', 1))
+        'vabro_testdata').getValue('Company mail Id', 1))
 
-CustomKeywords.'customPackage.FileUpload_V.uploadFile'(findTestObject('Company_Details/Add_Company_Details/input_Upload Logo_Logo'), 
-    'C:\\Users\\Edusys\\Pictures\\cartoons-wallpapers.jpg')
+CustomKeywords.'customPackage.FileUpload.uploadFile'(findTestObject('Company_Details/Add_Company_Details/input_Upload Logo_Logo'), 
+    'Sample_files/SampleJPGImage_100kbmb.jpg')
 
 WebUI.delay(1)
 
@@ -75,6 +78,4 @@ WebUI.delay(2)
 WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_SAVE'))
 
 WebUI.delay(2)
-
-WebUI.callTestCase(findTestCase('Main TestCases/Company_Details/Add_Company_Address'), [:], FailureHandling.STOP_ON_FAILURE)
 

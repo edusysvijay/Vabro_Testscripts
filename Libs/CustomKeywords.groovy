@@ -15,10 +15,10 @@ import java.util.List
 
 
 
-def static "customPackage.FileUpload_V.uploadFile"(
+def static "customPackage.FileUpload.uploadFile"(
     	TestObject to	
      , 	String filepath	) {
-    (new customPackage.FileUpload_V()).uploadFile(
+    (new customPackage.FileUpload()).uploadFile(
         	to
          , 	filepath)
 }
@@ -28,6 +28,11 @@ def static "customPackage.Verifytittle.VerifyingTitle"(
     	String ExpectedTitle	) {
     (new customPackage.Verifytittle()).VerifyingTitle(
         	ExpectedTitle)
+}
+
+
+def static "customPackage.logout.VabroLogoutpage"() {
+    (new customPackage.logout()).VabroLogoutpage()
 }
 
 
@@ -90,10 +95,12 @@ def static "kms.turing.katalon.plugins.assertj.BooleanAssert.isFalse"(
 def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.equals"(
     	String verifiedDate	
      , 	String compare2Date	
+     , 	String format	
      , 	String description	) {
     (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).equals(
         	verifiedDate
          , 	compare2Date
+         , 	format
          , 	description)
 }
 
@@ -101,12 +108,10 @@ def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.equals"(
 def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.equals"(
     	String verifiedDate	
      , 	String compare2Date	
-     , 	String format	
      , 	String description	) {
     (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).equals(
         	verifiedDate
          , 	compare2Date
-         , 	format
          , 	description)
 }
 
@@ -123,17 +128,6 @@ def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.equals"(
          , 	format
          , 	description
          , 	flowControl)
-}
-
-
-def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isAfter"(
-    	String verifiedDate	
-     , 	String compare2Date	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).isAfter(
-        	verifiedDate
-         , 	compare2Date
-         , 	description)
 }
 
 
@@ -162,6 +156,17 @@ def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isAfter"(
          , 	format
          , 	description
          , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isAfter"(
+    	String verifiedDate	
+     , 	String compare2Date	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).isAfter(
+        	verifiedDate
+         , 	compare2Date
+         , 	description)
 }
 
 
@@ -230,21 +235,21 @@ def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.matchesDateTimeFor
 
 def static "kms.turing.katalon.plugins.assertj.GenericAssert.isNull"(
     	Object object	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.GenericAssert()).isNull(
-        	object
-         , 	description)
-}
-
-
-def static "kms.turing.katalon.plugins.assertj.GenericAssert.isNull"(
-    	Object object	
      , 	String description	
      , 	FailureHandling flowControl	) {
     (new kms.turing.katalon.plugins.assertj.GenericAssert()).isNull(
         	object
          , 	description
          , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.assertj.GenericAssert.isNull"(
+    	Object object	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.GenericAssert()).isNull(
+        	object
+         , 	description)
 }
 
 
@@ -407,24 +412,24 @@ def static "kms.turing.katalon.plugins.assertj.NumberAssert.isZero"(
 def static "kms.turing.katalon.plugins.assertj.NumberAssert.greaterThan"(
     	Object x	
      , 	Object y	
-     , 	String description	) {
+     , 	String description	
+     , 	FailureHandling flowControl	) {
     (new kms.turing.katalon.plugins.assertj.NumberAssert()).greaterThan(
         	x
          , 	y
-         , 	description)
+         , 	description
+         , 	flowControl)
 }
 
 
 def static "kms.turing.katalon.plugins.assertj.NumberAssert.greaterThan"(
     	Object x	
      , 	Object y	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
+     , 	String description	) {
     (new kms.turing.katalon.plugins.assertj.NumberAssert()).greaterThan(
         	x
          , 	y
-         , 	description
-         , 	flowControl)
+         , 	description)
 }
 
 
@@ -455,34 +460,43 @@ def static "kms.turing.katalon.plugins.assertj.NumberAssert.lessThan"(
 def static "kms.turing.katalon.plugins.assertj.NumberAssert.notEqual"(
     	Object actual	
      , 	Object expected	
-     , 	String description	) {
+     , 	String description	
+     , 	FailureHandling flowControl	) {
     (new kms.turing.katalon.plugins.assertj.NumberAssert()).notEqual(
         	actual
          , 	expected
-         , 	description)
+         , 	description
+         , 	flowControl)
 }
 
 
 def static "kms.turing.katalon.plugins.assertj.NumberAssert.notEqual"(
     	Object actual	
      , 	Object expected	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
+     , 	String description	) {
     (new kms.turing.katalon.plugins.assertj.NumberAssert()).notEqual(
         	actual
          , 	expected
+         , 	description)
+}
+
+
+def static "kms.turing.katalon.plugins.assertj.NumberAssert.isPositive"(
+    	Object value	
+     , 	String description	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.assertj.NumberAssert()).isPositive(
+        	value
          , 	description
          , 	flowControl)
 }
 
 
-def static "kms.turing.katalon.plugins.assertj.NumberAssert.greaterThanOrEqual"(
-    	Object x	
-     , 	Object y	
+def static "kms.turing.katalon.plugins.assertj.NumberAssert.isPositive"(
+    	Object value	
      , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.NumberAssert()).greaterThanOrEqual(
-        	x
-         , 	y
+    (new kms.turing.katalon.plugins.assertj.NumberAssert()).isPositive(
+        	value
          , 	description)
 }
 
@@ -497,6 +511,17 @@ def static "kms.turing.katalon.plugins.assertj.NumberAssert.greaterThanOrEqual"(
          , 	y
          , 	description
          , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.assertj.NumberAssert.greaterThanOrEqual"(
+    	Object x	
+     , 	Object y	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.NumberAssert()).greaterThanOrEqual(
+        	x
+         , 	y
+         , 	description)
 }
 
 
@@ -519,26 +544,6 @@ def static "kms.turing.katalon.plugins.assertj.NumberAssert.lessThanOrEqual"(
     (new kms.turing.katalon.plugins.assertj.NumberAssert()).lessThanOrEqual(
         	x
          , 	y
-         , 	description
-         , 	flowControl)
-}
-
-
-def static "kms.turing.katalon.plugins.assertj.NumberAssert.isPositive"(
-    	Object value	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.NumberAssert()).isPositive(
-        	value
-         , 	description)
-}
-
-
-def static "kms.turing.katalon.plugins.assertj.NumberAssert.isPositive"(
-    	Object value	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.assertj.NumberAssert()).isPositive(
-        	value
          , 	description
          , 	flowControl)
 }
@@ -799,15 +804,6 @@ def static "kms.turing.katalon.plugins.assertj.StringAssert.notContain"(
          , 	caseSensitive
          , 	description
          , 	flowControl)
-}
-
-
-def static "com.kms.katalon.keyword.uploadfile.UploadFile.uploadFile"(
-    	TestObject object	
-     , 	String file	) {
-    (new com.kms.katalon.keyword.uploadfile.UploadFile()).uploadFile(
-        	object
-         , 	file)
 }
 
 
@@ -815,6 +811,15 @@ def static "com.kms.katalon.keyword.uploadfile.UploadFile.uploadFileUsingRobot"(
     	TestObject object	
      , 	String file	) {
     (new com.kms.katalon.keyword.uploadfile.UploadFile()).uploadFileUsingRobot(
+        	object
+         , 	file)
+}
+
+
+def static "com.kms.katalon.keyword.uploadfile.UploadFile.uploadFile"(
+    	TestObject object	
+     , 	String file	) {
+    (new com.kms.katalon.keyword.uploadfile.UploadFile()).uploadFile(
         	object
          , 	file)
 }
@@ -829,17 +834,24 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getDayOfWeek"(
 }
 
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getDefaultTimeZone"() {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getDefaultTimeZone()
-}
-
-
 def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getDuration"(
     	String startTime	
      , 	String endTime	) {
     (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getDuration(
         	startTime
          , 	endTime)
+}
+
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getDefaultTimeZone"() {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getDefaultTimeZone()
+}
+
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.setDefaultTimeZone"(
+    	String timeZoneId	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).setDefaultTimeZone(
+        	timeZoneId)
 }
 
 
@@ -874,10 +886,14 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPreviousDateTime
 }
 
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.setDefaultTimeZone"(
-    	String timeZoneId	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).setDefaultTimeZone(
-        	timeZoneId)
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.addDays"(
+    	String stringDate	
+     , 	String dateFormat	
+     , 	int amount	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).addDays(
+        	stringDate
+         , 	dateFormat
+         , 	amount)
 }
 
 
@@ -890,13 +906,8 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.convertString2Date"
 }
 
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentMonth"() {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentMonth()
-}
-
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentYear"() {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentYear()
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentDate"() {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentDate()
 }
 
 
@@ -904,15 +915,6 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getFutureTime"(
     	int hrs	
      , 	int minute	) {
     (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getFutureTime(
-        	hrs
-         , 	minute)
-}
-
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPastTime"(
-    	int hrs	
-     , 	int minute	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getPastTime(
         	hrs
          , 	minute)
 }
@@ -929,17 +931,20 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.formatStringDate"(
 }
 
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentDate"() {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentDate()
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPastTime"(
+    	int hrs	
+     , 	int minute	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getPastTime(
+        	hrs
+         , 	minute)
 }
 
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.addDays"(
-    	String stringDate	
-     , 	String dateFormat	
-     , 	int amount	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).addDays(
-        	stringDate
-         , 	dateFormat
-         , 	amount)
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentMonth"() {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentMonth()
+}
+
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentYear"() {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentYear()
 }

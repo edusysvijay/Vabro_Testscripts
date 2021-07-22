@@ -20,15 +20,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-<<<<<<< Updated upstream:Keywords/customPackage/Logout_p.groovy
-public class Logout_p {
-=======
-public class logout {
 
->>>>>>> Stashed changes:Keywords/customPackage/logout.groovy
+public class logout {
 	@Keyword
 	public void VabroLogoutpage() {
+		WebUI.delay(2)
+		WebUI.click(findTestObject('Object Repository/Vabro_Home_Page/Vabro_Logout/Profile_logout'))
 
-		WebUI.closeBrowser()
+		WebUI.click(findTestObject('Object Repository/Vabro_Home_Page/Vabro_Logout/a_Logout'))
 	}
 }
+
