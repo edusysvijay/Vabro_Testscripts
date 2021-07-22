@@ -81,5 +81,5 @@ WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Submit'))
 
 WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_SAVE'))
 
-CustomKeywords.'customPackage.Logout_p.VabroLogoutpage'()
+CustomKeywords.'customPackage.logout.VabroLogoutpage'()
 WebUI.closeBrowser()

@@ -1,8 +1,8 @@
 {
-  "keywordFileContentHash": "EE3D41EFEB7AA358ACFB7185B6960ABF",
+  "keywordFileContentHash": "2B8EABE3FB662017877A2DD93CA6305D",
   "keywordClasses": [
     {
-      "name": "customPackage.CustomFileUpload",
+      "name": "customPackage.FileUpload",
       "keywordMethods": [
         {
           "name": "uploadFile",
@@ -21,7 +21,7 @@
               }
             },
             {
-              "name": "filePath",
+              "name": "filepath",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
