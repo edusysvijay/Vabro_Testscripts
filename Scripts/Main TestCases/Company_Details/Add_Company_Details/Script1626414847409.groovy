@@ -44,7 +44,7 @@ WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Company 
         'vabro_testdata').getValue('Company mail Id', 1))
 
 CustomKeywords.'customPackage.FileUpload.uploadFile'(findTestObject('Company_Details/Add_Company_Details/input_Upload Logo_Logo'), 
-    'Sample_files/SampleJPGImage_100kbmb.jpg')
+    'C:\\Users\\Edusys\\Katalon Studio\\VABRO_TestScripts\\SampleJPGImage_100kbmb.jpg')
 
 WebUI.delay(1)
 
@@ -67,8 +67,9 @@ WebUI.mouseOverOffset(findTestObject('Company_Details/Add_Company_Details/cursor
 
 WebUI.dragAndDropByOffset(findTestObject('Company_Details/Add_Company_Details/source_ Logo_-move'), 157, 58)
 
-//WebUI.dragAndDropToObject(findTestObject('Company_Details/Add_Company_Details/source_ Logo_-move'), findTestObject(
-//        'uploadfile/Page_Add Company Details - VABROClient/desLogo_cropper-move'))
+//Reset the image
+WebUI.mouseOver(findTestObject('Company_Details/Add_Company_Details/button_reset'))
+
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Crop'))
