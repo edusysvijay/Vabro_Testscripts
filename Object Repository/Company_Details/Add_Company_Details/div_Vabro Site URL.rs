@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Vabro Site URL                         _62cd2f</name>
+   <name>div_Vabro Site URL</name>
    <tag></tag>
    <elementGuidId>a8b2e850-7fc5-4e72-baf4-87202d145e58</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>form.text-left.login-join-form > div.row</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Company Details'])[1]/following::div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>form.text-left.login-join-form > div.row</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

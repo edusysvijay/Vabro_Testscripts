@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Address Line 1                         _73fb14</name>
+   <name>div_Add New Address</name>
    <tag></tag>
-   <elementGuidId>e308ae0a-f572-4f5c-8070-a5cf7191b03e</elementGuidId>
+   <elementGuidId>b699b3bb-c51d-4c89-bbd9-fc9ca692d3b5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>form.address-form > div.row</value>
+         <key>XPATH</key>
+         <value>//div[@id='add-new-address']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='add-new-address']/div/div/div[2]/form/div</value>
+         <key>CSS</key>
+         <value>#add-new-address</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,35 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>row</value>
+      <value>modal fade show</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>add-new-address</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-modal</name>
+      <type>Main</type>
+      <value>true</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>dialog</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,17 +64,28 @@
       <name>text</name>
       <type>Main</type>
       <value>
+    
+        
+            
+                Add New Address
+                
+                    ×
+                
+            
+            
+                
+                    
                         
                             
                                 Address Line 1*
                                 
-                            Address line 1 should be between 5 to 60 characters.
+                            
                         
                         
                             
                                 Address Line 2
                                 
-                            Address line 2 should be between 5 to 60 characters.
+                            
                         
                         
                             
@@ -331,41 +370,48 @@ Zimbabwe
                                 
                             
                         
-                    </value>
+                    
+                    Submit
+                    Close
+                
+            
+        
+    
+</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;add-new-address&quot;)/div[@class=&quot;modal-dialog modal-lg&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]/form[@class=&quot;address-form&quot;]/div[@class=&quot;row&quot;]</value>
+      <value>id(&quot;add-new-address&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@id='add-new-address']/div/div/div[2]/form/div</value>
+      <value>//div[@id='add-new-address']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add New Address'])[2]/following::div[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Skip for now'])[1]/following::div[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Skip for now'])[1]/following::div[6]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SAVE'])[1]/following::div[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/form/div</value>
+      <value>//main/div[2]</value>
    </webElementXpaths>
 </WebElementEntity>
