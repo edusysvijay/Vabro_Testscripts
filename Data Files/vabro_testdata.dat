@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>282d4088-b114-4b89-8ab4-0e068c36fbaf</dataFileGUID>
-   <dataSourceUrl>Excelsheet/Login sheetexcel.xlsx</dataSourceUrl>
+   <dataSourceUrl>Excelsheet/Vabro_TestData.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <properties>
@@ -17,6 +17,6 @@
    </properties>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Company_Details</sheetName>
+   <sheetName>Company_Address</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

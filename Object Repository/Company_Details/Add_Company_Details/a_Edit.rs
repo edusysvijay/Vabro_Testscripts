@@ -6,15 +6,19 @@
    <elementGuidId>e6bcb2b8-dd1a-4d40-890f-2a749c51c2cf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a.mr-4.edit-address.text-uppercase</value>
+         <key>BASIC</key>
+         <value>//*[@href = '#' and (text() = 'Edit' or . = 'Edit')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//a[contains(text(),'Edit')]</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.mr-4.edit-address.text-uppercase</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
