@@ -19,47 +19,16 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/')
+WebUI.navigateToUrl('https://vabro-dev.azurewebsites.net/')
 
-WebUI.setText(findTestObject('null'), 
-    'testadm21@aol.com')
+WebUI.click(findTestObject('Registration_page/verify_Email/a_Join'))
 
-WebUI.setEncryptedText(findTestObject('null'), 
-    'ZaJEugbsRAzrN/6XQFXNeQ==')
+WebUI.click(findTestObject('Registration_page/verify_Email/input_Email address'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('null'))
+WebUI.setText(findTestObject('Registration_page/verify_Email/input_Email address'), findTestData('Vabro_Testdata/Registration_testdata').getValue(
+        'Email Address Register', 1))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Registration_page/verify_Email/button_Agree and Join'))
 
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.mouseOver(findTestObject('null'))
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.mouseOver(findTestObject('null'))
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.closeBrowser()
+CustomKeywords.'customPackage.Logout_p.VabroLogoutpage'()
 

@@ -25,12 +25,12 @@ WebUI.click(findTestObject('Create_Project/Edit_this_Project/a_Edit this Project
 
 WebUI.click(findTestObject('Create_Project/Project_Overview/input__ProjectName'))
 
-WebUI.selectOptionByValue(findTestObject('Create_Project/Project_Overview/select_1                                   _7fb073'), 
+WebUI.selectOptionByValue(findTestObject('Create_Project/Project_Overview/select_1 scrumteam'), 
     '2', true)
 
-WebUI.selectOptionByValue(findTestObject('Create_Project/Project_Overview/select_members'), '2', true)
+WebUI.selectOptionByValue(findTestObject('Create_Project/Project_Overview/select_Team members'), '2', true)
 
-WebUI.selectOptionByValue(findTestObject('Create_Project/Project_Overview/select_members'), '2', true)
+WebUI.selectOptionByValue(findTestObject('Create_Project/Project_Overview/select_Team members'), '2', true)
 
 WebUI.click(findTestObject('Create_Project/Project_Overview/button_Save and Continue'))
 
