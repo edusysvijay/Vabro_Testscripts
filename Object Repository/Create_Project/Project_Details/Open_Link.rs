@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Open_Link</name>
+   <tag></tag>
+   <elementGuidId>8b543e87-a186-4f45-a55e-4f609338349a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[2]/div/div[2]/div/div[2]/a/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>i.fas.fa-external-link-alt</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fas fa-external-link-alt</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;desktop-only&quot;]/body[1]/div[@class=&quot;container-fluid&quot;]/div[@class=&quot;row&quot;]/main[@class=&quot;col-md-9 ml-md-auto&quot;]/div[@class=&quot;floating-form-block p-5&quot;]/form[@class=&quot;text-left add-project-form&quot;]/div[@class=&quot;row attach-files-links&quot;]/div[@class=&quot;col-sm-6 attach-links&quot;]/div[@class=&quot;form-group&quot;]/div[@class=&quot;mt-3&quot;]/div[@class=&quot;input-group input-group-sm&quot;]/div[@class=&quot;input-group-append&quot;]/a[@class=&quot;btn btn-link copy-2-clip ml-2&quot;]/i[@class=&quot;fas fa-external-link-alt&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[2]/div/div[2]/a/i</value>
+   </webElementXpaths>
+</WebElementEntity>

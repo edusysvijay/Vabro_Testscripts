@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>textarea_replycomment</name>
+   <name>AttachmentLink</name>
    <tag></tag>
-   <elementGuidId>d1fede85-a3cb-4bc1-9e93-092e816c8c47</elementGuidId>
+   <elementGuidId>ed34c6b5-b2d2-4c13-8813-91c24e10a48c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[3]/div[2]/textarea</value>
+         <value>//input[@id='link-0']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>textarea[name=&quot;Comments[1001].Comment&quot;]</value>
+         <value>#link-0</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,48 +21,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>textarea</value>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control validComment comment-box</value>
+      <value>validWebsite form-control</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>link-0</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>Comments[1001].Comment</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>rows</name>
-      <type>Main</type>
-      <value>3</value>
+      <value>ProjectLinks[0].AttachmentLink</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[@class=&quot;desktop-only&quot;]/body[1]/div[@class=&quot;container-fluid&quot;]/div[@class=&quot;row&quot;]/main[@class=&quot;col-md-9 ml-md-auto&quot;]/div[@class=&quot;floating-form-block p-5&quot;]/form[@class=&quot;text-left add-project-form&quot;]/div[@class=&quot;comments-block&quot;]/div[@class=&quot;comment&quot;]/div[@class=&quot;comment edit&quot;]/div[@class=&quot;comment-form&quot;]/textarea[@class=&quot;form-control validComment comment-box&quot;]</value>
+      <value>/html[@class=&quot;desktop-only&quot;]/body[1]/div[@class=&quot;container-fluid&quot;]/div[@class=&quot;row&quot;]/main[@class=&quot;col-md-9 ml-md-auto&quot;]/div[@class=&quot;floating-form-block p-5&quot;]/form[@class=&quot;text-left add-project-form&quot;]/div[@class=&quot;row attach-files-links&quot;]/div[@class=&quot;col-sm-6 attach-links&quot;]/div[@class=&quot;form-group&quot;]/div[1]/div[@class=&quot;mt-3 edit&quot;]/div[@class=&quot;input-group input-group-sm&quot;]/input[@id=&quot;link-0&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//textarea[@name='Comments[1001].Comment']</value>
+      <value>//input[@id='link-0']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//textarea</value>
+      <value>//div[2]/div/div/div/div/input</value>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>textarea_replycomment</name>
+   <name>ScrumTeamCancel</name>
    <tag></tag>
-   <elementGuidId>d1fede85-a3cb-4bc1-9e93-092e816c8c47</elementGuidId>
+   <elementGuidId>e9f55b87-9fe0-44e9-bc55-472694db9cd4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[3]/div[2]/textarea</value>
+         <value>//div[@id='team-0']/div/div[3]/div/div/div/div/i</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>textarea[name=&quot;Comments[1001].Comment&quot;]</value>
+         <value>div.selectize-input-block.active > i.fas.fa-times.pr-2</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,48 +21,41 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>textarea</value>
+      <value>i</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control validComment comment-box</value>
+      <value>fas fa-times pr-2</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>Comments[1001].Comment</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>rows</name>
-      <type>Main</type>
-      <value>3</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[@class=&quot;desktop-only&quot;]/body[1]/div[@class=&quot;container-fluid&quot;]/div[@class=&quot;row&quot;]/main[@class=&quot;col-md-9 ml-md-auto&quot;]/div[@class=&quot;floating-form-block p-5&quot;]/form[@class=&quot;text-left add-project-form&quot;]/div[@class=&quot;comments-block&quot;]/div[@class=&quot;comment&quot;]/div[@class=&quot;comment edit&quot;]/div[@class=&quot;comment-form&quot;]/textarea[@class=&quot;form-control validComment comment-box&quot;]</value>
+      <value>id(&quot;team-0&quot;)/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-12&quot;]/div[@class=&quot;form-group&quot;]/div[@class=&quot;selectize-control form-control multi&quot;]/div[@class=&quot;selectize-input items has-options not-full focus dropdown-active has-items&quot;]/div[@class=&quot;selectize-input-block active&quot;]/i[@class=&quot;fas fa-times pr-2&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
+      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//textarea[@name='Comments[1001].Comment']</value>
+      <value>//div[@id='team-0']/div/div[3]/div/div/div/div/i</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//textarea</value>
+      <value>//div[3]/div/div/div/div/i</value>
    </webElementXpaths>
 </WebElementEntity>

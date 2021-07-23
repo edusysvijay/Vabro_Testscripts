@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>textarea_replycomment</name>
+   <name>Public</name>
    <tag></tag>
-   <elementGuidId>d1fede85-a3cb-4bc1-9e93-092e816c8c47</elementGuidId>
+   <elementGuidId>59033741-9ad7-40cc-acde-ca4be64b4d7d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[3]/div[2]/textarea</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Private'])[1]/following::div[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>textarea[name=&quot;Comments[1001].Comment&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,48 +20,52 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>textarea</value>
+      <value>div</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control validComment comment-box</value>
+      <value>custom-control custom-radio custom-control-inline</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
+      <name>text</name>
       <type>Main</type>
-      <value>Comments[1001].Comment</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>rows</name>
-      <type>Main</type>
-      <value>3</value>
+      <value>
+                                        
+
+                                Public
+                            </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[@class=&quot;desktop-only&quot;]/body[1]/div[@class=&quot;container-fluid&quot;]/div[@class=&quot;row&quot;]/main[@class=&quot;col-md-9 ml-md-auto&quot;]/div[@class=&quot;floating-form-block p-5&quot;]/form[@class=&quot;text-left add-project-form&quot;]/div[@class=&quot;comments-block&quot;]/div[@class=&quot;comment&quot;]/div[@class=&quot;comment edit&quot;]/div[@class=&quot;comment-form&quot;]/textarea[@class=&quot;form-control validComment comment-box&quot;]</value>
+      <value>/html[1]/body[1]/div[@class=&quot;container-fluid&quot;]/main[@class=&quot;pb-3&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-lg-10 col-xl-8 mx-auto&quot;]/div[@class=&quot;floating-form-block p-5&quot;]/form[@class=&quot;text-left add-project-form&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-6&quot;]/div[@class=&quot;form-group&quot;]/div[1]/div[@class=&quot;custom-control custom-radio custom-control-inline&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//textarea[@name='Comments[1001].Comment']</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Private'])[1]/following::div[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[3]/following::div[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//textarea</value>
+      <value>//div[7]/div/div/div[2]</value>
    </webElementXpaths>
 </WebElementEntity>

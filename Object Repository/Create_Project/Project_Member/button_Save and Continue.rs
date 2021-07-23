@@ -3,15 +3,15 @@
    <description></description>
    <name>button_Save and Continue</name>
    <tag></tag>
-   <elementGuidId>c4c2fef0-1dd6-42d8-8bdf-5aece053489a</elementGuidId>
+   <elementGuidId>3d03518f-1dad-4acc-8973-3bf5709d28ce</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@type='submit']</value>
+      </entry>
       <entry>
          <key>CSS</key>
          <value>button.btn.btn-primary.mr-4</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//button[text()='Save and Continue']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -63,14 +63,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[5]/following::button[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Skip For Now'])[1]/preceding::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
