@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>Registration_testdata</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+<<<<<<< HEAD:Data Files/Vabro_Testdata/login_testdata.dat
+   <dataFileGUID>282d4088-b114-4b89-8ab4-0e068c36fbaf</dataFileGUID>
+   <dataSourceUrl>D:\vabro login details\VAbro Email id &amp; pwd.xlsx</dataSourceUrl>
+=======
+   <dataFileGUID>ebe689d0-0943-4615-bdd2-cc0890d0a1b5</dataFileGUID>
+   <dataSourceUrl>C:\Users\Edusys\Documents\GitHub\Vabro_Testscripts\Excelsheet\Registration_Data.xlsx</dataSourceUrl>
+>>>>>>> ff25fdbf292683c62b37c0af7ff8aaf9dd895c20:Data Files/Vabro_Testdata/Registration_testdata.dat
+   <driver>ExcelFile</driver>
+   <isInternalPath>true</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName>DD-TEST</sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

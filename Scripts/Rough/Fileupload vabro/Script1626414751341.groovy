@@ -40,7 +40,7 @@ WebUI.click(findTestObject('null'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_SAVE (1)'))
+WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_SAVE'))
 
 CustomKeywords.'com.test.vabro.Logoutpage.VabroLogoutpage'()
 

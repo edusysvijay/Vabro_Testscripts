@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://vabro-staging.azurewebsites.net/Home/login'</initValue>
+      <initValue>'https://vabro-dev.azurewebsites.net/'</initValue>
       <name>G_SiteURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

@@ -22,44 +22,35 @@ WebUI.openBrowser('')
 WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/')
 
 //Iterating multiple data
+for (def row = 1; row <= findTestData('Vabro_Testdata/vabro_testdata').getRowNumbers(); row++) {
+    WebUI.setText(findTestObject('Vabro_Home_Page/input_Email address'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
+            'EmailID', row))
 
-for (def row = 1; row <= findTestData('Vabro_Testdata/login_testdata').getRowNumbers(); row++) {
-    WebUI.setText(findTestObject('Vabro_Home_Page/input_Email address'), findTestData('Vabro_Testdata/login_testdata').getValue('Email Id', 
-            row))
+    WebUI.setText(findTestObject('Vabro_Home_Page/input_Password'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
+            'Password', row))
 
-    WebUI.setText(findTestObject('Vabro_Home_Page/input_Password'), findTestData('Vabro_Testdata/login_testdata').getValue('Password', 
-            row))
-}
 
-String Title = WebUI.getWindowTitle()
+        String Title = WebUI.getWindowTitle()
+    
+        String Title2 = 'Home Page - VABROClient'
+    
+        //The pagetitle Name, Home Page - VABROClient
+        if (Title.equals(Title2)) {
+            WebUI.comment('Title matched')
+        } else {
+            WebUI.executeJavaScript('alert(\'page title not matched or this is not Vabro homepage\')', null)
+        }
+    WebUI.delay(2)
 
-String Title2 = 'Home Page - VABROClient'
-
-//The pagetitle Name
-//*Home Page - VABROClient
-if (Title.equals(Title2)) {
-    WebUI.comment('Title matched')
-} else {
-    WebUI.executeJavaScript('alert(\'page title not matched or this is not Vabro homepage\')', null)
+    WebUI.click(findTestObject('Vabro_Home_Page/button_Login'))
 
     WebUI.delay(2)
+	WebUI.verifyTextPresent(findTestData('Vabro_Testdata/vabro_testdata').getValue('Role', row), false)
+	WebUI.delay(2)
+    CustomKeywords.'customPackage.logout.VabroLogoutpage'()
+
+    
 }
 
-WebUI.click(findTestObject('Vabro_Home_Page/span_Show'))
-
-WebUI.click(findTestObject('Vabro_Home_Page/span_Hide'))
-
-WebUI.click(findTestObject('Vabro_Home_Page/img_Join_rounded'))
-
-WebUI.click(findTestObject('Vabro_Home_Page/input_concat'))
-
-WebUI.click(findTestObject('Vabro_Home_Page/img_Join_rounded'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Vabro_Home_Page/button_Login'))
-
-WebUI.delay(2)
-
-CustomKeywords.'customPackage.Logout_p.VabroLogoutpage'()
+WebUI.closeBrowser()
 

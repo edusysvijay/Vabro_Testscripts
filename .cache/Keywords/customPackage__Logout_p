@@ -1,9 +1,19 @@
 {
-  "keywordFileContentHash": "0BA77199750F4F05E73D96CDF7D7C56F",
+  "keywordFileContentHash": "0BCA2713CC78F6EB54075CED9614C41E",
   "keywordClasses": [
     {
       "name": "customPackage.Logout_p",
       "keywordMethods": []
+    },
+    {
+      "name": "customPackage.Logout_p$logout",
+      "keywordMethods": [
+        {
+          "name": "VabroLogoutpage",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
     }
   ],
   "javadocParsed": true

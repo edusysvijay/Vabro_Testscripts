@@ -17,59 +17,46 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//Negative testcase
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Skip for now'))
+CustomKeywords.'customPackage.login.loginIntoApplicationWithGlobalVariable'()
 
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Add New Address'))
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/div_Address Line 1                         _73fb14'))
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input__AddressLine1'), 'rf')
-
-WebUI.check(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2_AddressLine2'))
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2_AddressLine2'), 'f')
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_City_City'))
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_City_City'), 'h')
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_State_State'))
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_State_State'), 'o')
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_Zip Code_PostalCode'))
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Zip Code_PostalCode'), 'd0')
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/div_Phone Number'))
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Phone Number_PhoneNo'), '23rfnb')
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Submit'))
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Close'))
+WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/Home/company-address')
 
 //Positive Testcase
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Add New Address'))
+for (def row = 1; row <= findTestData('Vabro_Testdata/vabro_testdata').getRowNumbers(); row++) {
+    WebUI.delay(2)
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input__AddressLine1'), 'IRC village near nayapalli ')
+    WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Add New Address'))
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2_AddressLine2'), 'Nayapalli Jaydev bihar')
+    WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input__AddressLine1'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
+            'Address Line 1', row))
 
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_City_City'))
+    WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2_AddressLine2'), findTestData(
+            'Vabro_Testdata/vabro_testdata').getValue('Address Line 2', row))
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_City_City'), 'Bhubaneswar')
+    WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_City_City'))
 
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_State_State'))
+    WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_City_City'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
+            'City', row))
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_State_State'), 'odisha')
+    WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_State_State'))
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Zip Code_PostalCode'), '751007')
+    WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_State_State'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
+            'State', row))
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Phone Number_PhoneNo'), '7381262664')
+    WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Zip Code_PostalCode'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
+            'Zip', row))
 
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Submit'))
+    WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Phone Number_PhoneNo'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
+            'Ph number', row))
+
+    WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Submit'))
+
+    WebUI.delay(2)
+}
+
+WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_SAVE'))
+
+//Address Update
 
 WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Edit'))
 
@@ -81,5 +68,5 @@ WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Submit'))
 
 WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_SAVE'))
 
-CustomKeywords.'customPackage.Logout_p.VabroLogoutpage'()
+CustomKeywords.'customPackage.logout.VabroLogoutpage'()
 WebUI.closeBrowser()

@@ -1,8 +1,8 @@
 {
-  "keywordFileContentHash": "EE3D41EFEB7AA358ACFB7185B6960ABF",
+  "keywordFileContentHash": "1A623D3AEDD68D8D402F443831C5B922",
   "keywordClasses": [
     {
-      "name": "customPackage.CustomFileUpload",
+      "name": "customPackage.FileUpload",
       "keywordMethods": [
         {
           "name": "uploadFile",

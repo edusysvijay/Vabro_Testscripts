@@ -9,10 +9,10 @@ import java.lang.String
 
 
 
-def static "customPackage.FileUpload_V.uploadFile"(
+def static "customPackage.FileUpload.uploadFile"(
     	TestObject to	
      , 	String filePath	) {
-    (new customPackage.FileUpload_V()).uploadFile(
+    (new customPackage.FileUpload()).uploadFile(
         	to
          , 	filePath)
 }
@@ -22,6 +22,11 @@ def static "customPackage.Verifytittle.VerifyingTitle"(
     	String ExpectedTitle	) {
     (new customPackage.Verifytittle()).VerifyingTitle(
         	ExpectedTitle)
+}
+
+
+def static "customPackage.logout.VabroLogoutpage"() {
+    (new customPackage.logout()).VabroLogoutpage()
 }
 
 
