@@ -44,7 +44,8 @@ WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Company 
         'vabro_testdata').getValue('Company mail Id', 1))
 
 CustomKeywords.'customPackage.FileUpload.uploadFile'(findTestObject('Company_Details/Add_Company_Details/input_Upload Logo_Logo'), 
-    'C:\\Users\\Edusys\\Katalon Studio\\VABRO_TestScripts\\SampleJPGImage_100kbmb.jpg')
+    'C:\\Users\\Edusys\\Documents\\GitHub\\Vabro_Testscripts\\Sample_files\\SampleJPGImage_100kbmb.jpg')
+
 
 WebUI.delay(1)
 

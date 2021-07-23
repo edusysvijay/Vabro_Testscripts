@@ -33,6 +33,7 @@ public class login {
 
 		WebUI.openBrowser(applicationURL)
 		WebUI.waitForPageLoad(GlobalVariable.G_Timeout)
+		WebUI.delay(1)
 		WebUI.maximizeWindow()
 
 		//		WebUI.waitForElementVisible(findTestObject('Pages/MyAccount page/nav_HomeMyaccount'), GlobalVariable.G_Timeout)
