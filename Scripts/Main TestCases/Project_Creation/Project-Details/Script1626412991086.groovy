@@ -17,8 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 WebUI.click(findTestObject('Create_Project/Project_Overview/i_Team AOL'))
+
+WebUI.acceptAlert()
 
 WebUI.click(findTestObject('Create_Project/Edit_this_Project/a_Edit this Project'))
 
@@ -28,7 +29,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Create_Project/Project_Details/a_Add Link'))
 
-WebUI.setText(findTestObject('Create_Project/Project_Details/input_Add Link_ProjectLinks0.AttachmentLink'), 'https://gmail.com')
+WebUI.setText(findTestObject('Create_Project/Project_Details/input_.AttachmentLink'), 'https://gmail.com')
 
 //WebUI.click(findTestObject('null'))
 WebUI.click(findTestObject('Create_Project/Project_Details/a_Add Comment'))

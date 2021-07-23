@@ -1,28 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-<<<<<<< HEAD:Object Repository/Company_Details/Add_Company_Details/button_SAVE (mis).rs
-   <name>button_SAVE (mis)</name>
-=======
-   <name>a_Logout</name>
->>>>>>> Vijay:Object Repository/Vabro_Home_Page/Vabro_Logout/a_Logout.rs
+   <name>button_refresh</name>
    <tag></tag>
-   <elementGuidId>44086e95-0944-4a36-a260-bbfaca88a7b8</elementGuidId>
+   <elementGuidId>e891e22d-6257-4558-9554-fd838b06cb49</elementGuidId>
    <selectorCollection>
       <entry>
-<<<<<<< HEAD:Object Repository/Company_Details/Add_Company_Details/button_SAVE (mis).rs
-=======
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
->>>>>>> Vijay:Object Repository/Vabro_Home_Page/Vabro_Logout/a_Logout.rs
          <key>XPATH</key>
-         <value>//a[contains(text(),'Logout')]</value>
+         <value>//button[@id='refresh']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>button.btn.btn-primary.mr-4</value>
+         <value>#refresh</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -32,90 +21,83 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>refresh</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>dropdown-item</value>
+      <value>md but textu f36</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>href</name>
+      <name>onclick</name>
       <type>Main</type>
-      <value>/home/logout</value>
+      <value>if(chkl())r();</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Logout</value>
+      <value></value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;header&quot;)/div[@class=&quot;container-fluid&quot;]/div[@class=&quot;d-flex align-items-center justify-content-between&quot;]/div[3]/div[@class=&quot;d-flex align-items-center justify-content-end&quot;]/div[@class=&quot;profile-dropdown dropdown show&quot;]/div[@class=&quot;dropdown-menu dropdown-menu-right show&quot;]/a[@class=&quot;dropdown-item&quot;]</value>
+      <value>id(&quot;refresh&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@id='refresh']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//header[@id='header']/div/div/div[3]/div/div[4]/div/a[5]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:link</name>
-      <type>Main</type>
-      <value>//a[contains(text(),'Logout')]</value>
+      <value>//body[@id='webmail']/div/div/main/div[2]/div/div/div/div[6]/button</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Best Practices'])[1]/following::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[2]/following::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Admin Settings'])[1]/following::a[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=''])[1]/following::button[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='New Invite'])[1]/preceding::a[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Logout']/parent::*</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:href</name>
-      <type>Main</type>
-      <value>//a[contains(@href, '/home/logout')]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='This inbox is empty'])[1]/preceding::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//a[5]</value>
+      <value>//div[6]/button</value>
    </webElementXpaths>
 </WebElementEntity>
