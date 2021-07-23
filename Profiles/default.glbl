@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'tester@yopmail.com'</initValue>
+      <initValue>'tester1@yopmail.com'</initValue>
       <name>G_Username</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
