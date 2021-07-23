@@ -22,31 +22,31 @@ CustomKeywords.'customPackage.login.loginIntoApplicationWithGlobalVariable'()
 WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/Home/company-address')
 
 //Positive Testcase
-for (def row = 1; row <= findTestData('vabro_testdata').getRowNumbers(); row++) {
+for (def row = 1; row <= findTestData('Vabro_Testdata/vabro_testdata').getRowNumbers(); row++) {
     WebUI.delay(2)
 
     WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Add New Address'))
 
-    WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input__AddressLine1'), findTestData('vabro_testdata').getValue(
+    WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input__AddressLine1'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
             'Address Line 1', row))
 
     WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2_AddressLine2'), findTestData(
-            'vabro_testdata').getValue('Address Line 2', row))
+            'Vabro_Testdata/vabro_testdata').getValue('Address Line 2', row))
 
     WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_City_City'))
 
-    WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_City_City'), findTestData('vabro_testdata').getValue(
+    WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_City_City'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
             'City', row))
 
     WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_State_State'))
 
-    WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_State_State'), findTestData('vabro_testdata').getValue(
+    WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_State_State'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
             'State', row))
 
-    WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Zip Code_PostalCode'), findTestData('vabro_testdata').getValue(
+    WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Zip Code_PostalCode'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
             'Zip', row))
 
-    WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Phone Number_PhoneNo'), findTestData('vabro_testdata').getValue(
+    WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Phone Number_PhoneNo'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
             'Ph number', row))
 
     WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Submit'))

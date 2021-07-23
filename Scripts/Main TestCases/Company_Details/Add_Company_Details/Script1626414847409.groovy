@@ -34,10 +34,10 @@ WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/home/welcome')
 
 WebUI.click(findTestObject('Vabro_Welcome/Add-Update-CompanyDetails'))
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Company Name_CompanyName'), findTestData('vabro_testdata').getValue(
+WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Company Name_CompanyName'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
         'Company Name', 1))
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Website_Website'), findTestData('vabro_testdata').getValue(
+WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Website_Website'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
         'Company Website', 1))
 
 WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Company Email Id_CompanyEmailId'), findTestData(

@@ -22,11 +22,11 @@ WebUI.openBrowser('')
 WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/')
 
 //Iterating multiple data
-for (def row = 1; row <= findTestData('vabro_testdata').getRowNumbers(); row++) {
-    WebUI.setText(findTestObject('Vabro_Home_Page/input_Email address'), findTestData('vabro_testdata').getValue(
+for (def row = 1; row <= findTestData('Vabro_Testdata/vabro_testdata').getRowNumbers(); row++) {
+    WebUI.setText(findTestObject('Vabro_Home_Page/input_Email address'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
             'EmailID', row))
 
-    WebUI.setText(findTestObject('Vabro_Home_Page/input_Password'), findTestData('vabro_testdata').getValue(
+    WebUI.setText(findTestObject('Vabro_Home_Page/input_Password'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
             'Password', row))
 
 
@@ -45,7 +45,7 @@ for (def row = 1; row <= findTestData('vabro_testdata').getRowNumbers(); row++) 
     WebUI.click(findTestObject('Vabro_Home_Page/button_Login'))
 
     WebUI.delay(2)
-	WebUI.verifyTextPresent(findTestData('vabro_testdata').getValue('Role', row), false)
+	WebUI.verifyTextPresent(findTestData('Vabro_Testdata/vabro_testdata').getValue('Role', row), false)
 	WebUI.delay(2)
     CustomKeywords.'customPackage.logout.VabroLogoutpage'()
 
