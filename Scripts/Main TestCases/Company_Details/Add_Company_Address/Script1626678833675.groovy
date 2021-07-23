@@ -18,66 +18,75 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //Negative testcase
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Add New Address'))
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Skip for now'))
 
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/div_Address Line 1                         _73fb14'))
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input__AddressLine1'), 'rf')
-
-WebUI.check(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2'))
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2'), 'f')
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_City_City'))
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_City_City'), 'h')
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_State'))
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_State'), 'o')
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_Zip Code'))
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Zip Code'), 'd0')
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/div_Phone Number'))
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Phone Number'), '23rfnb')
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Submit'))
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Close'))
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Add New Address'))
+//
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/div_Address Line 1'))
+//
+//WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input__AddressLine1'), 'rf')
+//
+//WebUI.check(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2_AddressLine2'))
+//
+//WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2_AddressLine2'), 'f')
+//
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_City_City'))
+//
+//WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_City_City'), 'h')
+//
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_State_State'))
+//
+//WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_State_State'), 'o')
+//
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_Zip Code_PostalCode'))
+//
+//WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Zip Code_PostalCode'), 'd0')
+//
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/div_Phone Number'))
+//
+//WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Phone Number_PhoneNo'), '23rfnb')
+//
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Submit'))
+//
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Close'))
 
 //Positive Testcase
 WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Add New Address'))
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input__AddressLine1'), 'IRC village near nayapalli ')
+WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input__AddressLine1'),  findTestData('vabro_testdata').getValue(
+        'Address Line 1', 1))
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2'), 'Nayapalli Jaydev bihar')
+WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2_AddressLine2'),  findTestData('vabro_testdata').getValue(
+        'Address Line 2', 1))
 
 WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_City_City'))
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_City_City'), 'Bhubaneswar')
+WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_City_City'),  findTestData('vabro_testdata').getValue(
+        'City', 1))
+WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_State_State'))
 
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_State'))
+WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_State_State'), findTestData('vabro_testdata').getValue(
+        'State', 1))
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_State'), 'odisha')
+WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Zip Code_PostalCode'),  findTestData('vabro_testdata').getValue(
+        'Zip', 1))
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Zip Code'), '751007')
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Phone Number'), '7381262664')
+WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Phone Number_PhoneNo'),  findTestData('vabro_testdata').getValue(
+        'Ph number', 1))
 
 WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Submit'))
+
+//Address Update
 
 WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Edit'))
 
 WebUI.click(findTestObject('Company_Details/Add_Company_Details/div_Phone Number'))
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Phone Number'), '8073801721')
+WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Phone Number_PhoneNo'), '8073801721')
 
 WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Submit'))
 
 WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_SAVE'))
 
-CustomKeywords.'customPackage.Logout_p.VabroLogoutpage'()
-
+CustomKeywords.'customPackage.logout.VabroLogoutpage'()
+WebUI.closeBrowser()
