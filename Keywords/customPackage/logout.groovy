@@ -25,9 +25,9 @@ public class logout {
 	@Keyword
 	public void VabroLogoutpage() {
 		WebUI.delay(2)
-		WebUI.click(findTestObject('Object Repository/Vabro_Home_Page/Vabro_Logout/Profile_logout'))
+		WebUI.click(findTestObject('Vabro_Home_Page/Profile_Select/Profile_logout'))
 
-		WebUI.click(findTestObject('Object Repository/Vabro_Home_Page/Vabro_Logout/a_Logout'))
+		WebUI.click(findTestObject('Vabro_Home_Page/Profile_Select/a_Logout'))
 	}
 }
 

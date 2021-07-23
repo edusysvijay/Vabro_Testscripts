@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.openBrowser('https://vabro-staging.azurewebsites.net')
 
-WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/')
+WebUI.maximizeWindow()
 
 //Iterating multiple data
 for (def row = 1; row <= findTestData('Vabro_Testdata/vabro_testdata').getRowNumbers(); row++) {
@@ -29,28 +29,29 @@ for (def row = 1; row <= findTestData('Vabro_Testdata/vabro_testdata').getRowNum
     WebUI.setText(findTestObject('Vabro_Home_Page/input_Password'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
             'Password', row))
 
+    String Actual_Title = WebUI.getWindowTitle()
 
-        String Title = WebUI.getWindowTitle()
-    
-        String Title2 = 'Home Page - VABROClient'
-    
-        //The pagetitle Name, Home Page - VABROClient
-        if (Title.equals(Title2)) {
-            WebUI.comment('Title matched')
-        } else {
-            WebUI.executeJavaScript('alert(\'page title not matched or this is not Vabro homepage\')', null)
-        }
-    WebUI.delay(2)
+    String Expected_Title = 'Home Page - VABROClient'
 
-    WebUI.click(findTestObject('Vabro_Home_Page/button_Login'))
+    //The pagetitle Name, Home Page - VABROClient
+    if (Actual_Title.equals(Expected_Title)) {
+		
+        WebUI.comment('Title matched')
 
-    WebUI.delay(2)
-	WebUI.verifyTextPresent(findTestData('Vabro_Testdata/vabro_testdata').getValue('Role', row), false)
-	WebUI.delay(2)
-    CustomKeywords.'customPackage.logout.VabroLogoutpage'()
+        WebUI.delay(2)
 
-    
+        WebUI.click(findTestObject('Vabro_Home_Page/button_Login'))
+
+        WebUI.delay(2)
+
+        WebUI.verifyTextPresent(findTestData('Vabro_Testdata/vabro_testdata').getValue('Role', row), false)
+
+        WebUI.delay(2)
+
+        CustomKeywords.'customPackage.logout.VabroLogoutpage'()
+    } else {
+        WebUI.executeJavaScript('alert(\'page title not matched or this is not Vabro homepage\')', null)
+    }
 }
 
 WebUI.closeBrowser()
-
