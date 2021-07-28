@@ -25,10 +25,12 @@ WebUI.click(findTestObject('Registration_page/verify_Email/a_Join'))
 
 WebUI.click(findTestObject('Registration_page/verify_Email/input_Email address'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Registration_page/verify_Email/input_Email address'), findTestData('Vabro_Testdata/Registration_testdata').getValue(
-        'Email Address Register', 1))
+for (def row = 1; row <= findTestData('Vabro_Testdata/vabro_testdata').getRowNumbers(); row++) {
+    WebUI.setText(findTestObject('Registration_page/verify_Email/input_Email address'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
+            'Email Address Register', row))
 
-WebUI.click(findTestObject('Registration_page/verify_Email/button_Agree and Join'))
+    WebUI.click(findTestObject('Registration_page/verify_Email/button_Agree and Join'))
+}
 
-CustomKeywords.'customPackage.Logout_p.VabroLogoutpage'()
+WebUI.closeBrowser()
 
