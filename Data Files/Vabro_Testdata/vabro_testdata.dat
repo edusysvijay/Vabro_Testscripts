@@ -17,6 +17,6 @@
    </properties>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Login</sheetName>
+   <sheetName>Registration</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

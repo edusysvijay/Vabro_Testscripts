@@ -23,9 +23,11 @@ WebUI.navigateToUrl('https://www.mailinator.com/v4/public/inboxes.jsp')
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Registration_page/Accountset_mailinator/input_inbox_field'), findTestData('Vabro_Testdata/Registration_testdata').getValue(
+//for(def row=1; row <= findTestData('Vabro_Testdata/vabro_testdata').getRowNumbers(); row++) {
+WebUI.setText(findTestObject('Registration_page/Accountset_mailinator/input_inbox_field'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
         'Email Address Register', 1))
 
+//}
 WebUI.click(findTestObject('Registration_page/Accountset_mailinator/button_GO'))
 
 WebUI.delay(1)
@@ -40,27 +42,43 @@ WebUI.click(findTestObject('Registration_page/Accountset_mailinator/span_Verify 
 
 WebUI.delay(3)
 
-WebUI.switchToWindowTitle('')
+WebUI.switchToWindowTitle('Account Setup - VABROClient')
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Registration_page/Accountset_mailinator/input_First Name'))
 
 WebUI.setText(findTestObject('Object Repository/Registration_page/Accountset_mailinator/input_First Name'), findTestData(
-        'Vabro_Testdata/Registration_testdata').getValue('First Name', 1))
+        'Vabro_Testdata/vabro_testdata').getValue('First Name', 1))
 
 WebUI.click(findTestObject('Registration_page/Accountset_mailinator/input_Last Name'))
 
-WebUI.setText(findTestObject('Registration_page/Accountset_mailinator/input_Last Name'), findTestData('Vabro_Testdata/Registration_testdata').getValue(
+WebUI.setText(findTestObject('Registration_page/Accountset_mailinator/input_Last Name'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
         'Last Name', 1))
 
 WebUI.click(findTestObject('Registration_page/Accountset_mailinator/input_Password'))
 
-WebUI.setText(findTestObject('Registration_page/Accountset_mailinator/input_Password'), findTestData('Vabro_Testdata/Registration_testdata').getValue(
+WebUI.setText(findTestObject('Registration_page/Accountset_mailinator/input_Password'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
         'Password', 1))
 
 WebUI.click(findTestObject('Registration_page/Accountset_mailinator/input ConfirmPassword'))
 
-WebUI.setText(findTestObject('Registration_page/Accountset_mailinator/input ConfirmPassword'), findTestData('Vabro_Testdata/Registration_testdata').getValue(
+WebUI.setText(findTestObject('Registration_page/Accountset_mailinator/input ConfirmPassword'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
         'Confirm password', 1))
 
 WebUI.click(findTestObject('Registration_page/Accountset_mailinator/button_Submit'))
+
+WebUI.click(findTestObject('Registration_page/verify_Email/input_Email address'))
+
+WebUI.setText(findTestObject('Registration_page/verify_Email/input_Email address'), findTestData('Vabro_Testdata/vabro_testdata').getValue(
+        'Email Address Register', 1))
+
+WebUI.click(findTestObject('Vabro_Home_Page/input_Password'))
+
+WebUI.setText(findTestObject('Vabro_Home_Page/input_Password'), findTestData('Vabro_Testdata/vabro_testdata').getValue('Password', 
+        1))
+
+WebUI.click(findTestObject('Vabro_Home_Page/button_Login'))
+
+WebUI.closeBrowser()
 
