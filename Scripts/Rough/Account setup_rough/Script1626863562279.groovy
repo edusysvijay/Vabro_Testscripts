@@ -19,42 +19,34 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net')
+WebUI.navigateToUrl('https://yopmail.com/en/wm')
 
-WebUI.setText(findTestObject('Vabro_Home Page/input_Email address_Email'), 'testerpo1@aol.com')
+WebUI.setText(findTestObject('Registration_page/Account setup/Email name login'), 'automationtester-new')
 
-WebUI.setEncryptedText(findTestObject('Vabro_Home Page/input_Password_Password'), 'ZaJEugbsRAzrN/6XQFXNeQ==')
+WebUI.sendKeys(findTestObject('Registration_page/Account setup/Email name login'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Vabro_Home Page/img_Join_rounded_1'))
+WebUI.delay(5)
 
-WebUI.mouseOver(findTestObject('Vabro_Home Page/img'))
+WebUI.switchToWindowUrl('https://yopmail.com/en/wm')
+
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Vabro_Home Page/img'))
 
-WebUI.delay(3)
+WebUI.mouseOver(findTestObject('Registration_page/Account setup/Thanks Verify Email Address'))
 
-WebUI.click(findTestObject('Vabro_Home Page/img_Join_rounded_1'))
 
-String Title = WebUI.getWindowTitle()
+WebUI.click(findTestObject('Registration_page/Account setup/Thanks Verify Email Address'))
 
-String Title2 = 'Welcome To Vabro! - VABROClient'
+WebUI.delay(2)
 
-//The pagetitle Name
-//*Welcome to Vabro!- VABROClient
-if (Title.equals(Title2)) {
-    WebUI.comment('Title matched')
-} else {
-    WebUI.executeJavaScript('alert(\'page title not matched or Do not welcome vabro\')', null)
+WebUI.setText(findTestObject('Registration_page/Account setup/First Name'), 'automation')
 
-    WebUI.delay(4)
-}
+WebUI.setText(findTestObject('Registration_page/Account setup/Last Name'), 'Tester')
 
-//WebUI.takeScreenshot('C:\\Users\\NAMRATA BEHERA\\Pictures\\Screenshots\\Screenshot (27).png')
-WebUI.click(findTestObject('Vabro_Home Page/button_Login'))
+WebUI.setEncryptedText(findTestObject('Registration_page/Account setup/input_Password'), 'ZaJEugbsRAySLgEY4PX/Hw==')
 
-WebUI.delay(1)
+WebUI.setEncryptedText(findTestObject('Registration_page/Account setup/Confirm Password'), 'ZaJEugbsRAySLgEY4PX/Hw==')
 
-CustomKeywords.'customPackage.Logout_p.VabroLogoutpage'()
+WebUI.click(findTestObject('Registration_page/Account setup/button_Submit'))
 

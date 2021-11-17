@@ -19,42 +19,30 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net')
+WebUI.navigateToUrl('https://yopmail.com/en/')
 
-WebUI.setText(findTestObject('Vabro_Home Page/input_Email address_Email'), 'testerpo1@aol.com')
+WebUI.setText(findTestObject('Account setup/input_Type the Email name of your choice_login'), 'testerkat17@yopmail.com')
 
-WebUI.setEncryptedText(findTestObject('Vabro_Home Page/input_Password_Password'), 'ZaJEugbsRAzrN/6XQFXNeQ==')
-
-WebUI.click(findTestObject('Vabro_Home Page/img_Join_rounded_1'))
-
-WebUI.mouseOver(findTestObject('Vabro_Home Page/img'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Vabro_Home Page/img'))
-
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Vabro_Home Page/img_Join_rounded_1'))
-
-String Title = WebUI.getWindowTitle()
-
-String Title2 = 'Welcome To Vabro! - VABROClient'
-
-//The pagetitle Name
-//*Welcome to Vabro!- VABROClient
-if (Title.equals(Title2)) {
-    WebUI.comment('Title matched')
-} else {
-    WebUI.executeJavaScript('alert(\'page title not matched or Do not welcome vabro\')', null)
-
-    WebUI.delay(4)
-}
-
-//WebUI.takeScreenshot('C:\\Users\\NAMRATA BEHERA\\Pictures\\Screenshots\\Screenshot (27).png')
-WebUI.click(findTestObject('Vabro_Home Page/button_Login'))
+WebUI.click(findTestObject('Registration_page/verify_Email/i_Enter'))
 
 WebUI.delay(1)
 
-CustomKeywords.'customPackage.Logout_p.VabroLogoutpage'()
+WebUI.switchToWindowTitle('Inbox')
+
+WebUI.delay(1)
+
+//WebUI.mouseOver(findTestObject('Registration_page/Account setup/Thanks Verify Email Address'))
+WebUI.click(findTestObject('Registration_page/Account setup/Thanks Verify Email Address'))
+
+WebUI.delay(1)
+
+WebUI.setText(findTestObject('Registration_page/Account setup/First Name'), 'Automation')
+
+WebUI.setText(findTestObject('Registration_page/Account setup/Last Name'), 'Tester1')
+
+WebUI.setText(findTestObject('Registration_page/Account setup/input_Password'), 'Tester@123')
+
+WebUI.setText(findTestObject('Registration_page/Account setup/Confirm Password'), 'Tester@123')
+
+WebUI.click(findTestObject('Registration_page/Account setup/button_Submit'))
 

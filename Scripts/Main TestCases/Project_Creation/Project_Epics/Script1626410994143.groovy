@@ -43,21 +43,21 @@ WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('null'))
 
-WebUI.mouseOver(findTestObject('Create_Project/Project_Epics/Page_Project Epics - VABROClient/product Owner1'))
+WebUI.mouseOver(findTestObject('null'))
 
 WebUI.delay(1)
-
-WebUI.click(findTestObject('Create_Project/Project_Epics/Page_Project Epics - VABROClient/product Owner1'))
 
 WebUI.click(findTestObject('null'))
 
-WebUI.mouseOver(findTestObject('Create_Project/Project_Epics/Page_Project Epics - VABROClient/Additional product owner'))
+WebUI.click(findTestObject('null'))
+
+WebUI.mouseOver(findTestObject('null'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Create_Project/Project_Epics/Page_Project Epics - VABROClient/Additional product owner'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Create_Project/Project_Epics/Page_Project Epics - VABROClient/Page_Project Epics - VABROClient/success btn'))
+WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('null'))
 

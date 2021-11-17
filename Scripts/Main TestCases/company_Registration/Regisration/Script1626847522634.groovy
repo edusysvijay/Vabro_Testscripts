@@ -19,42 +19,17 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net')
+WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/')
 
-WebUI.setText(findTestObject('Vabro_Home Page/input_Email address_Email'), 'testerpo1@aol.com')
+WebUI.click(findTestObject('Registration_page/verify_Email/a_Join'))
 
-WebUI.setEncryptedText(findTestObject('Vabro_Home Page/input_Password_Password'), 'ZaJEugbsRAzrN/6XQFXNeQ==')
+WebUI.click(findTestObject('Registration_page/verify_Email/input_Email address'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Vabro_Home Page/img_Join_rounded_1'))
+WebUI.setText(findTestObject('Registration_page/verify_Email/input_Email address'), 'testerkat17@yopmail.com')
 
-WebUI.mouseOver(findTestObject('Vabro_Home Page/img'))
+WebUI.click(findTestObject('Registration_page/verify_Email/button_Agree and Join'))
 
 WebUI.delay(2)
-
-WebUI.click(findTestObject('Vabro_Home Page/img'))
-
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Vabro_Home Page/img_Join_rounded_1'))
-
-String Title = WebUI.getWindowTitle()
-
-String Title2 = 'Welcome To Vabro! - VABROClient'
-
-//The pagetitle Name
-//*Welcome to Vabro!- VABROClient
-if (Title.equals(Title2)) {
-    WebUI.comment('Title matched')
-} else {
-    WebUI.executeJavaScript('alert(\'page title not matched or Do not welcome vabro\')', null)
-
-    WebUI.delay(4)
-}
-
-//WebUI.takeScreenshot('C:\\Users\\NAMRATA BEHERA\\Pictures\\Screenshots\\Screenshot (27).png')
-WebUI.click(findTestObject('Vabro_Home Page/button_Login'))
-
-WebUI.delay(1)
 
 CustomKeywords.'customPackage.Logout_p.VabroLogoutpage'()
 

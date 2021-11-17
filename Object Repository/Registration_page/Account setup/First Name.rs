@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Address Line 2_AddressLine2</name>
+   <name>First Name</name>
    <tag></tag>
-   <elementGuidId>8c9bc7c3-c668-43f2-9505-e298d1713828</elementGuidId>
+   <elementGuidId>8aa4bd8f-c2a1-4cf3-972b-74034e796efc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#address-line-2</value>
+         <key>XPATH</key>
+         <value>//input[@id='first-name']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='address-line-2']</value>
+         <key>CSS</key>
+         <value>#first-name</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -35,42 +35,63 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>validAddress form-control</value>
+      <value>validUserName form-control</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>address-line-2</value>
+      <value>first-name</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val</name>
+      <type>Main</type>
+      <value>true</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-maxlength</name>
+      <type>Main</type>
+      <value>Please enter no more than 50 characters</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-maxlength-max</name>
+      <type>Main</type>
+      <value>50</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-val-required</name>
+      <type>Main</type>
+      <value>Please enter first name</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>AddressLine2</value>
+      <value>FirstName</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;address-line-2&quot;)</value>
+      <value>id(&quot;first-name&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='address-line-2']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='add-new-address']/div/div/div[2]/form/div/div[2]/div/input</value>
+      <value>//input[@id='first-name']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

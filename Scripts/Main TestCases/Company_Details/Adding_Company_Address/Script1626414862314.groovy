@@ -19,51 +19,56 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/home/login?ReturnUrl=%2FHome%2Fcompany-details')
+WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net')
 
-WebUI.setText(findTestObject('Vabro_Home Page/input_Email address_Email'), 'testadm21@aol.com')
+WebUI.setText(findTestObject('Vabro_Home Page/input_Email address_Email'), 'testerpo1@aol.com')
 
 WebUI.setText(findTestObject('Vabro_Home Page/input_Password_Password'), 'Tester@1234')
 
 WebUI.click(findTestObject('Vabro_Home Page/button_Login'))
 
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Skip for now'))
+WebUI.click(findTestObject('Company_Details/Add_Company_Details/div_AOL company'))
 
+WebUI.navigateToUrl('https://vabro-staging.azurewebsites.net/Home/company-address')
+
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Skip for now'))
 WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Add New Address'))
 
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/div_Address Line 1                         _73fb14'))
+WebUI.delay(3)
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input__AddressLine1'), 'rf')
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/div_Address Line 1                         _73fb14'))
 
-WebUI.check(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2_AddressLine2'))
+//WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input__AddressLine1'), 'rf')
+//
+//WebUI.check(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2'))
+//
+//WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2'), 'f')
+//
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_City_City'))
+//
+//WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_City_City'), 'h')
+//
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_State_State'))
+//
+//WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_State_State'), 'o')
+//
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_Zip Code_PostalCode'))
+//
+//WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Zip Code_PostalCode'), 'd0')
+//
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/div_Phone Number'))
+//
+//WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Phone Number_PhoneNo'), '23rfnb')
+//
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Submit'))
+//
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Close'))
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2_AddressLine2'), 'f')
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_City_City'))
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_City_City'), 'h')
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_State_State'))
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_State_State'), 'o')
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_Zip Code_PostalCode'))
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Zip Code_PostalCode'), 'd0')
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/div_Phone Number'))
-
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Phone Number_PhoneNo'), '23rfnb')
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Submit'))
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/button_Close'))
-
-WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Add New Address'))
+//WebUI.click(findTestObject('Company_Details/Add_Company_Details/a_Add New Address'))
 
 WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input__AddressLine1'), 'IRC village near nayapalli ')
 
-WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2_AddressLine2'), 'Nayapalli Jaydev bihar')
+WebUI.setText(findTestObject('Company_Details/Add_Company_Details/input_Address Line 2'), 'Nayapalli Jaydev bihar')
 
 WebUI.click(findTestObject('Company_Details/Add_Company_Details/input_City_City'))
 
